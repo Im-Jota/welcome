@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida al Navegador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-main">
+
+        <div class="aside">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="active" id="item-1">🏠</a>
+                    </li>
+
+                    <div class="divider"></div>
+
+                    <li>
+                        <a id="item-2">👤</a>
+                    </li>
+                    <li>
+                        <a id="item-3">🔖</a>
+                    </li>
+                    <li>
+                        <a id="item-4">🎨</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="main">
+
+            <div class="card step active" id="welcome">
+                <div class="container-card">
+                    <div class="card-top">
+                        <img class="logo" src="./assets/Midori Logo.svg" />
+                        <h1 class="title"><strong>Welcome to Midori</strong></h1>
+                        <p class="subtitle">We're excited to have you here! Click below to get started.</p>
+                    </div>
+                    <div>
+                        <button id="next-welcome" class="primary">Start</button>
+                        <button id="skip-welcome" class="secondary">Skip</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="step-login" class="card step">
+                <div class="container-card">
+                    <div class="card-top">
+                        <h2 class="title"><strong>Sign in</strong></h1>
+                        <p class="description">Log in to your account to enjoy all features and keep your data synced.</p>
+                    </div>
+                    <button id="next-login">Astian Account</button>
+                </div>
+            </div>
+
+            <div id="step-import-bookmarks" class="card step">
+                <div class="container-card">
+                    <div class="card-top">
+                        <h1 class="title"><strong>Import Bookmarks</strong></h1>
+                        <p class="description">Bring your bookmarks from any browser with our futuristic import tool. Just choose your browser to get started.</p>
+                    </div>
+                    
+                    <div class="card-main">
+                        <span>Choose Your Browser</span>
+                        <div class="container-browser">
+                            <div class="card-browser">
+                                <img src="./assets/google.png" />
+                                <h3>Google Chrome</h3>
+                                <span class="info">Import from Chrome bookmarks</span>
+                            </div>
+
+                            <div class="card-browser">
+                                <img src="./assets/edge.png" />
+                                <h3>Microsoft Edge</h3>
+                                <span class="info">Import from Chrome bookmarks</span>
+                            </div>
+
+                            <div class="card-browser">
+                                <img src="./assets/vivaldi.png" />
+                                <h3>Vivaldi</h3>
+                                <span class="info">Import from Chrome bookmarks</span>
+                            </div>
+
+                            <div class="card-browser">
+                                <img src="./assets/opera.png" />
+                                <h3>Opera</h3>
+                                <span class="info">Import from Chrome bookmarks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="step-theme" class="card step">
+                <div class="container-card">
+                    <div class="card-top">
+                        <h1 class="title"><strong>Customize the appearance of your browser</strong></h1>
+                        <p class="description">Choose between light or dark mode to tailor the browser interface to your visual preferences.</p>
+                    </div>
+
+                    <div class="card-main">
+                        <span>Choose Your Theme</span>
+                        <div class="container-browser">
+                            <div class="card-theme">
+                                <div class="container-icon">
+                                    <img class="icon-theme" src="./assets/light.svg" />
+                                </div>
+                                <span>☀️ Light</span>
+                            </div>
+
+                            <div class="card-theme">
+                                <div class="container-icon">
+                                    <img class="icon-theme" src="./assets/dark.svg" />
+                                </div>
+                                <span>🌙 Dark</span>
+                            </div>
+
+                            <div class="card-theme">
+                                <div class="container-icon">
+                                    <img class="icon-theme" src="./assets/system.png" />
+                                </div>
+                                <span>💻 System</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="step-finished" class="card step">
+                <div class="container-card">
+                    <div class="card-top">
+                        <h2 class="title"><strong>Setup Complete!</strong></h2>
+                        <p class="subtitle">¡Todo está listo para empezar a navegar!</p>
+                    </div>
+                    <div class="card-main">
+                        <button id="start-browsing">Start Browsing</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-main disabled" id="footer-main">
+                <button id="back">⬅️ Back</button>
+                <button id="next">Skip ➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
